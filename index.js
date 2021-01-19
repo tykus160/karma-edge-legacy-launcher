@@ -47,7 +47,7 @@ function EdgeBrowser (baseBrowserDecorator) {
 }
 
 EdgeBrowser.prototype = {
-  name: 'Edge',
+  name: 'EdgeLegacy',
   DEFAULT_CMD: {
     win32: 'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe'
   },
@@ -60,5 +60,5 @@ EdgeBrowser.$inject = ['baseBrowserDecorator']
 // -----------------
 
 module.exports = {
-  'launcher:Edge': ['type', EdgeBrowser]
+  'launcher:EdgeLegacy': ['type', EdgeBrowser]
 }
